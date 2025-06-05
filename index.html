@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackout Demolition & Landscaping | Gananoque, ON</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#10B981',
+                        dark: '#111827',
+                        darker: '#0B1120',
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #111827;
+            color: #F3F4F6;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, rgba(16,185,129,0.15) 0%, rgba(16,185,129,0) 50%);
+        }
+        
+        .hero-image {
+            background-image: linear-gradient(to bottom, rgba(17, 24, 39, 0.6), rgba(17, 24, 39, 0.9)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="dark:bg-dark">
+    <!-- Navigation -->
+    <nav class="bg-darker/90 backdrop-blur-md fixed w-full z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-md bg-primary text-white font-bold text-xl mr-2">
+                            BD
+                        </div>
+                        <span class="text-white font-bold text-xl">Blackout <span class="text-primary">Demolition</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="#home" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Home</a>
+                        <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">About Us</a>
+                        <a href="#services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Services</a>
+                        <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Contact</a>
+                        <a href="#contact" class="bg-primary hover:bg-emerald-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-300 animate-pulse-slow">
+                            Get a Quote
+                        </a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+                <a href="#services" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#contact" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="#contact" class="bg-primary hover:bg-emerald-600 text-white block px-3 py-2 rounded-md text-base font-medium text-center mt-2">
+                    Get a Quote
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-image h-screen flex items-center pt-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center animate-fade-in">
+            <div class="animate-slide-up">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white">
+                    Transforming <span class="text-primary">Spaces</span> With Precision
+                </h1>
+                <p class="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                    Professional demolition and landscaping services in the Trenton to Cornwall corridor
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#services" class="bg-primary hover:bg-emerald-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 shadow-lg">
+                        Our Services
+                    </a>
+                    <a href="#contact" class="bg-white/10 hover:bg-white/20 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 border border-white/20">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-darker">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 top-0 h-full w-1 bg-primary/30 -ml-0.5"></div>
+                
+                <!-- Timeline Items -->
+                <div class="space-y-16">
+                    <!-- Item 1 -->
+                    <div class="relative flex items-start md:items-center justify-between md:justify-normal group gap-8">
+                        <div class="md:w-1/2 pr-8 md:text-right animate-slide-up">
+                            <div class="h-24"></div>
+                            <div class="gradient-bg p-6 rounded-xl border border-gray-700">
+                                <h3 class="text-xl font-bold text-white mb-2">Local Expertise</h3>
+                                <p class="text-gray-300">Serving the Trenton to Cornwall corridor with deep knowledge of local requirements</p>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0 relative w-6 h-6 rounded-full bg-primary border-4 border-darker z-10 mx-auto md:mx-0 group-odd:order-first group-even:order-last">
+                            <div class="absolute inset-0 bg-primary rounded-full animate-ping opacity-75"></div>
+                        </div>
+                        <div class="md:w-1/2 pl-8 md:text-left animate-slide-up">
+                            <div class="h-24 md:hidden"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="relative flex items-start md:items-center justify-between md:justify-normal group gap-8">
+                        <div class="md:w-1/2 pr-8 md:text-right animate-slide-up">
+                            <div class="h-24"></div>
+                        </div>
+                        <div class="flex-shrink-0 relative w-6 h-6 rounded-full bg-primary border-4 border-darker z-10 mx-auto md:mx-0 group-odd:order-first group-even:order-last">
+                            <div class="absolute inset-0 bg-primary rounded-full animate-ping opacity-75"></div>
+                        </div>
+                        <div class="md:w-1/2 pl-8 md:text-left animate-slide-up">
+                            <div class="gradient-bg p-6 rounded-xl border border-gray-700">
+                                <h3 class="text-xl font-bold text-white mb-2">Proven Reliability</h3>
+                                <p class="text-gray-300">2+ years serving clients with highly rated standards and fair pricing</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="relative flex items-start md:items-center justify-between md:justify-normal group gap-8">
+                        <div class="md:w-1/2 pr-8 md:text-right animate-slup">
+                            <div class="h-24"></div>
+                            <div class="gradient-bg p-6 rounded-xl border border-gray-700">
+                                <h3 class="text-xl font-bold text-white mb-2">Full Service</h3>
+                                <p class="text-gray-300">From demolition to landscaping - we handle all aspects of property transformation</p>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0 relative w-6 h-6 rounded-full bg-primary border-4 border-darker z-10 mx-auto md:mx-0 group-odd:order-first group-even:order-last">
+                            <div class="absolute inset-0 bg-primary rounded-full animate-ping opacity-75"></div>
+                        </div>
+                        <div class="md:w-1/2 pl-8 md:text-left animate-slide-up">
+                            <div class="h-24 md:hidden"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div class="relative flex items-start md:items-center justify-between md:justify-normal group gap-8">
+                        <div class="md:w-1/2 pr-8 md:text-right animate-slide-up">
+                            <div class="h-24"></div>
+                        </div>
+                        <div class="flex-shrink-0 relative w-6 h-6 rounded-full bg-primary border-4 border-darker z-10 mx-auto md:mx-0 group-odd:order-first group-even:order-last">
+                            <div class="absolute inset-0 bg-primary rounded-full animate-ping opacity-75"></div>
+                        </div>
+                        <div class="md:w-1/2 pl-8 md:text-left animate-slide-up">
+                            <div class="gradient-bg p-6 rounded-xl border border-gray-700">
+                                <h3 class="text-xl font-bold text-white mb-2">Quality Guarantee</h3>
+                                <p class="text-gray-300">We stand behind all our work with a commitment to your complete satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 animate-fade-in">
+                <span class="text-primary font-semibold">WHO WE ARE</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Blackout <span class="text-primary">Demolition</span> & Landscaping</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-slide-up">
+                    <div class="gradient-bg p-8 rounded-2xl border border-gray-800 shadow-xl">
+                        <h3 class="text-2xl font-bold text-white mb-4">About Us</h3>
+                        <p class="text-gray-300 mb-4">
+                            Based in beautiful Gananoque, Ontario, Blackout Demolition & Landscaping is a locally owned company specializing in Interior Demolition projects, as well as small to medium property maintenance.
+                        </p>
+                        <p class="text-gray-300 mb-4">
+                            Servicing the Trenton to Cornwall corridor, Blackout has serviced a number of new and existing clients over the past 2 years with highly rated standards and fair prices.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="animate-slide-up">
+                    <div class="gradient-bg p-8 rounded-2xl border border-gray-800 shadow-xl h-full">
+                        <h3 class="text-2xl font-bold text-white mb-4">Electrical Worker Mission</h3>
+                        <p class="text-gray-300 mb-4">
+                            Providing property owners with quality demolition and landscaping services at fair prices, on a flexible schedule.
+                        </p>
+                        <p class="text-gray-300">
+                            Your trusted partner, helping clear the path for your future home designs, and helping shape your outdoor living space...
+                        </p>
+                        <div class="mt-6 flex flex-wrap gap-4">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 bg-primary/20 p-2 rounded-full">
+                                    <i class="fas fa-check-circle text-primary"></i>
+                                </div>
+                                <p class="ml-2 text-gray-300">Licensed & Insured</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 bg-primary/20 p-2 rounded-full">
+                                    <i class="fas fa-check-circle text-primary"></i>
+                                </div>
+                                <p class="ml-2 text-gray-300">Fair Pricing</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 bg-primary/20 p-2 rounded-full">
+                                    <i class="fas fa-check-circle text-primary"></i>
+                                </div>
+                                <p class="ml-2 text-gray-300">Reliable Service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 bg-darker">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 animate-fade-in">
+                <span class="text-primary font-semibold">WHAT WE OFFER</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Our <span class="text-primary">Services</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto mt-4">
+                    We specialize in both demolition and landscaping services to meet all your property needs
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Demolition Card -->
+                <div class="service-card bg-gray-800 rounded-xl overflow-hidden border border-gray-700 transition-all duration-300 transform hover:scale-105">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center">
+                        <i class="fas fa-hammer text-6xl text-primary"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-white mb-4">Demolition Services</h3>
+                        <p class="text-gray-400 mb-4">
+                            We specialize in small to medium-scale demolitions of interiors, deconstruction of on-property exterior fixtures such as sheds, decks, and more...
+                        </p>
+                        <ul class="text-gray-400 space-y-2 mt-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span>Interior demolition</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span>Exterior structure removal</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span>Site clearing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span>Debris removal</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Landscaping Card -->
+                <div class="service-card bg-gray-800 rounded-xl overflow-hidden border border-gray-700 transition-all duration-300 transform hover:scale-105">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center">
+                        <i class="fas fa-tree text-6xl text-primary"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-white mb-4">Landscaping Services</h3>
+                        <p class="text-gray-400 mb-4">
+                            Our landscaping services include property grooming, construction-site prep and clearing, and more...
+                        </p>
+                        <ul class="text-gray-400 space-y-2 mt-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span>Property maintenance</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span>Site preparation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span>Clearing and grading</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                <span>Seasonal cleanup</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary/10 to-primary/5">
+        <div class="max-w-7xl mx-auto text-center p-8 rounded-xl border border-gray-800 animate-fade-in">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to transform your property?</h2>
+            <p class="text-gray-300 mb-8 max-w-3xl mx-auto">
+                Contact us today for a free consultation and quote. We're committed to providing top-quality service with complete customer satisfaction.
+            </p>
+            <a href="#contact" class="bg-primary hover:bg-emerald-600 text-white font-medium py-3 px-8 rounded-lg transition-colors duration-300 inline-flex items-center">
+                Get Your Free Quote <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-primary font-semibold">GET IN TOUCH</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Contact <span class="text-primary">Us</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto mt-4">
+                    Reach out for more information or to request a quote for your next project
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="animate-slide-up">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="John Smith" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="your@email.com" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-300 mb-1">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="(123) 456-7890">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-300 mb-1">Service Needed</label>
+                            <select id="service" name="service" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-white">
+                                <option value="demolition">Demolition Services</option>
+                                <option value="landscaping">Landscaping Services</option>
+                                <option value="both">Both Services</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Your Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-white placeholder-gray-500" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-emerald-600 text-white font-medium py-3 px-4 rounded-lg transition-colors duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="animate-slide-up">
+                    <div class="gradient-bg p-8 rounded-2xl border border-gray-800 shadow-xl h-full">
+                        <h3 class="text-2xl font-bold text-white mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-primary/20 p-3 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-primary"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-white">Location</h4>
+                                    <p class="text-gray-400 mt-1">Gananoque, Ontario</p>
+                                    <p class="text-gray-400">Servicing Trenton to Cornwall corridor</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-primary/20 p-3 rounded-full">
+                                    <i class="fas fa-envelope text-primary"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-white">Email Us</h4>
+                                    <a href="mailto:info@blackoutdemo.ca" class="text-gray-400 hover:text-primary transition-colors duration-300 mt-1 block">info@blackoutdemo.ca</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-primary/20 p-3 rounded-full">
+                                    <i class="fas fa-phone-alt text-primary"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-white">Call Us</h4>
+                                    <a href="tel:+15195551234" class="text-gray-400 hover:text-primary transition-colors duration-300 mt-1 block">(519) 555-1234</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-primary/20 p-3 rounded-full">
+                                    <i class="fas fa-clock text-primary"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-white">Hours</h4>
+                                    <p class="text-gray-400 mt-1">Monday - Friday: 7am - 5pm</p>
+                                    <p class="text-gray-400">Saturday: 8am - 12pm</p>
+                                    <p class="text-gray-400">Emergency services available upon request</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="text-lg font-semibold text-white mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-gray-700 hover:bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="bg-gray-700 hover:bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="bg-gray-700 hover:bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darker border-t border-gray-800 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-md bg-primary text-white font-bold text-xl mr-2">
+                            BD
+                        </div>
+                        <span class="text-white font-bold text-xl">Blackout <span class="text-primary">Demolition</span></span>
+                    </div>
+                    <p class="text-gray-400 mt-4">
+                        Professional demolition and landscaping services in Gananoque and surrounding areas. Quality work at fair prices.
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-primary transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-primary transition-colors duration-300">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-primary transition-colors duration-300">Services</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">Demolition</li>
+                        <li class="text-gray-400">Landscaping</li>
+                        <li class="text-gray-400">Property Maintenance</li>
+                        <li class="text-gray-400">Site Preparation</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">
+                    © 2023 Blackout Demolition & Landscaping. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-primary text-sm transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-primary text-sm transition-colors duration-300">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for all links with hashes
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Form submission (would be connected to actual form handling in production)
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Thank you for your message! We will get back to you soon.');
+                form.reset();
+            });
+        }
+        
+        // Animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.animate-slide-up, .animate-fade-in');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        // Set initial state for animated elements
+        document.querySelectorAll('.animate-slide-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        });
+        
+        document.querySelectorAll('.animate-fade-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transition = 'opacity 0.6s ease-out';
+        });
+        
+        // Run once on page load
+        animateOnScroll();
+        
+        // Then run on scroll
+        window.addEventListener('scroll', animateOnScroll);
+    </script>
+</body>
+</html>
